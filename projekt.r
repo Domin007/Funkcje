@@ -1,15 +1,15 @@
 #' Konwersja temperatur I
 #' 
-#' @description Funkcja sluzaca do konwersji temperatury 
-#'  ze stopni Celsjusza do stopni Fahrenheita
+#' @description Funkcja służąca do konwersji
+#'  temperatury ze stopni Celsjusza do stopni Fahrenheita 
 #' 
-#' @comment Skala Fahrenheita uzywana jest m.in w USA
+#' @comment Skala Fahrenheita używana jest m.in. w USA 
 #'  zero przesunięte jest względem zera skali Celsjusza o wartość 32
 #' 
-#' @param temperatura_c wektor zawierajacy wartosci temperatury
+#' @param temperatura_c wektor zawierający wartości temperatury
 #'  w stopniach Celsjusza
 #' 
-#' @return wektor numeryczny odpowiadajacy skali Fahrenheita
+#' @return wektor numeryczny odpowiadający skali Fahrenheita
 #' 
 #' @examples
 #' konwersja_c_f(20) 
@@ -25,7 +25,7 @@ konwersja_c_f = function(temperatura_c){
 
 #' Konwersja temperatur II
 #' 
-#' @description Funkcja sluzaca do konwersji temperatury 
+#' @description Funkcja służąca do konwersji temperatury 
 #'  ze stopni Fahrenheita do stopni Kelvina
 #' 
 #' @comment Skala Kelvina nazywana jest bezwzgledna skala temperatur,
