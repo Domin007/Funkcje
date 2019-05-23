@@ -192,7 +192,29 @@ zamiana_ms_kmh = function(km){
 }
 
 
+# Konwersja odległości I
 
+konwersja_Mile_KM = function(mile) { 
+ wynik = mile * 1.61
+ wynik
+} 
+
+formals(konwersja_Mile_KM) 
+body(konwersja_Mile_KM) 
+environment(konwersja_Mile_KM) 
+konwersja_Mile_KM(10)
+
+# Konwersja odległości morskich I
+
+konwersja_Nautical_mile_KM = function(mile) { 
+  wynik = mile * 1.85
+  wynik
+} 
+
+formals(konwersja_Nautical_mile_KM) 
+body(konwersja_Nautical_mile_KM) 
+environment(konwersja_Nautical_mile_KM) 
+konwersja_Nautical_mile_KM(10)
 
   
 
