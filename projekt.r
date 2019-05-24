@@ -6,10 +6,10 @@
 #' @comment Skala Fahrenheita uzywana jest m.in. w USA 
 #'  zero przesuniete jest wzgledem zera skali Celsjusza o wartosc 32
 #' 
-#' @param temperatura_c wektor zawierający wartosci temperatury
+#' @param temperatura_c wektor zawierajacy wartosci temperatury
 #'  w stopniach Celsjusza
 #' 
-#' @return wektor numeryczny odpowiadający skali Fahrenheita
+#' @return wektor numeryczny odpowiadajacy skali Fahrenheita
 #' 
 #' @examples
 #' konwersja_c_f(20) 
@@ -83,8 +83,8 @@ waluta_eur_zl = function(zl){
 
 #' Konwersja walut II
 #' 
-#' @description Funkcja służąca zmianie waluty PLN
-#'  na walute USD i na odwrót 
+#' @description Funkcja sluzaca zmianie waluty PLN
+#'  na walute USD i na odwrot 
 #' 
 #' @comment Dolar amerykanski jest najwazniejsza waluta swiata,
 #'  rozlicza sie w nim wiekszosc panstw swiata
@@ -122,7 +122,7 @@ waluta_usd_zl(20)
 #' @description Funkcja sluzaca zamianie km/h na mph i na odwrot
 #' 
 #' @comment Umiejetnosc przeliczania mph na km/h przydatna jest, gdy uzywamy aut
-#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajów,
+#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajow,
 #'  aby wiedziec z jaka predkoscia sie poruszamy
 #'  
 #' @param km wektor odpowiadajacy predkosci poruszania sie w km/h
@@ -200,7 +200,7 @@ zamiana_ms_kmh = function(km){
 #' @description Funkcja sluzaca do konwersji odleglosci z km na miedzynarodowe mile morskie(inm) i na odwrot  
 #' 
 #' @comment Umiejetnosc przeliczania tych jednostek wykorzystywana jest w nawigacji morskiej oraz w lotnictwie,
-#' dotyczy dlugosci, głebokosci, predkosci i kierunku
+#' dotyczy dlugosci, glebokosci, predkosci i kierunku
 #'
 #' 
 #' @param km wektor zawierajacy wartosci odleglosci w kilometrach
