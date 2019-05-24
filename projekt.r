@@ -1,12 +1,12 @@
 #' Konwersja temperatur I
 #' 
-#' @description Funkcja służąca do konwersji
+#' @description Funkcja sluzaca do konwersji
 #'  temperatury ze stopni Celsjusza do stopni Fahrenheita 
 #' 
-#' @comment Skala Fahrenheita używana jest m.in. w USA 
-#'  zero przesunięte jest względem zera skali Celsjusza o wartość 32
+#' @comment Skala Fahrenheita uzywana jest m.in. w USA 
+#'  zero przesuniete jest wzgledem zera skali Celsjusza o wartosc 32
 #' 
-#' @param temperatura_c wektor zawierający wartości temperatury
+#' @param temperatura_c wektor zawierający wartosci temperatury
 #'  w stopniach Celsjusza
 #' 
 #' @return wektor numeryczny odpowiadający skali Fahrenheita
@@ -25,16 +25,16 @@ konwersja_c_f = function(temperatura_c){
 
 #' Konwersja temperatur II
 #' 
-#' @description Funkcja służąca do konwersji temperatury 
+#' @description Funkcja sluzaca do konwersji temperatury 
 #'  ze stopni Fahrenheita do stopni Kelvina
 #' 
-#' @comment Skala Kelvina nazywana jest bezwzględną skalą temperatur,
-#'  powszechnie stosowana w badaniach naukowych na całym świecie.
+#' @comment Skala Kelvina nazywana jest bezwzgledna skala temperatur,
+#'  powszechnie stosowana w badaniach naukowych na calym swiecie.
 #'  
-#' @param temperatura_f wektor zawierający wartości temperatury
+#' @param temperatura_f wektor zawierajacy wartosci temperatury
 #'  w stopniach Fahrenheita
 #'  
-#' @return wektor numeryczny odpowiadający skali Kelvina
+#' @return wektor numeryczny odpowiadajacy skali Kelvina
 #'
 #' @examples
 #' konwersja_f_k(10)
@@ -51,13 +51,13 @@ konwersja_f_k = function(temperatura_f){
 
 #'Konwersja walut I
 #'
-#' @description Funkcja służąca zmianie waluty PLN
-#'  na walute EUR i na odwrót
+#' @description Funkcja sluzaca zmianie waluty PLN
+#'  na walute EUR i na odwrot
 #' 
-#' @comment Przy zamianie walut należy wziąść pod uwagę kurs,
-#'  który z dnia na dzień zmienia swoją wartość
+#' @comment Przy zamianie walut należy wziac pod uwage kurs,
+#'  ktory z dnia na dzien zmienia swoją wartosc
 #'  
-#' @param zl wektor odpowiadający wartości w walucie PLN
+#' @param zl wektor odpowiadający wartosci w walucie PLN
 #' 
 #' @return wektor numeryczny
 #' 
@@ -83,8 +83,8 @@ waluta_eur_zl = function(zl){
 
 #' Konwersja walut II
 #' 
-#' @description Funkcja służąca zmianie waluty PLN
-#'  na walute USD i na odwrót 
+#' @description Funkcja sluzaca zmianie waluty PLN
+#'  na walute USD i na odwrot 
 #' 
 #' @comment Dolar amerykanski jest najwazniejsza waluta swiata,
 #'  rozlicza sie w nim wiekszosc panstw swiata
@@ -122,7 +122,7 @@ waluta_usd_zl(20)
 #' @description Funkcja sluzaca zamianie km/h na mph i na odwrot
 #' 
 #' @comment Umiejetnosc przeliczania mph na km/h przydatna jest, gdy uzywamy aut
-#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajów,
+#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajow,
 #'  aby wiedziec z jaka predkoscia sie poruszamy
 #'  
 #' @param km wektor odpowiadajacy predkosci poruszania sie w km/h
@@ -192,7 +192,7 @@ zamiana_ms_kmh = function(km){
 }
 
 
-# Konwersja odległości I
+# Konwersja odleglosci I
 
 konwersja_Mile_KM = function(mile) { 
  wynik = mile * 1.61
@@ -204,7 +204,7 @@ body(konwersja_Mile_KM)
 environment(konwersja_Mile_KM) 
 konwersja_Mile_KM(10)
 
-# Konwersja odległości morskich I
+# Konwersja odleglosci morskich I
 
 konwersja_Nautical_mile_KM = function(mile) { 
   wynik = mile * 1.85
@@ -218,6 +218,26 @@ konwersja_Nautical_mile_KM(10)
 
   
 
+# Konwersja dlugosci
+
+#' @description Funkcja sluzaca do zamiany jednostek
+#'  dlugosci z cali na centrymetry
+#' 
+#' @param cal wektor odpowiadajacy dlugosci w cal
+#'
+#' @return wektor numeryczny w cm
+#'
+#' @warning dlugosci ujemne nie istnieja
+#'
+#' @examples
+#' zamiana_cale_cm(2)
+#' zamiana_cale_cm(0)
+#' zamiana_cale_cm(c(10,20,30))
+
+
+zamiana_cale_cm = function(cm){
+  (cal = 2.54*cm)
+}
 
 
 
