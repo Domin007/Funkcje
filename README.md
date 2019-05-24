@@ -1,4 +1,4 @@
-Zbiór funkcji do przeliczania jednostek (konwersja temperatur, predkosci, odleglosci, zamiana walut)
+Zbiór funkcji do przeliczania jednostek (konwersja temperatur, prędkości, odległości, zamiana walut)
 
 Uczestnicy:
 1. Bartosz Majewski
