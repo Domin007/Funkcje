@@ -28,13 +28,13 @@ konwersja_c_f = function(temperatura_c){
 #' @description Funkcja służąca do konwersji temperatury 
 #'  ze stopni Fahrenheita do stopni Kelvina
 #' 
-#' @comment Skala Kelvina nazywana jest bezwzgledna skala temperatur,
+#' @comment Skala Kelvina nazywana jest bezwzględną skalą temperatur,
 #'  powszechnie stosowana w badaniach naukowych na całym świecie.
 #'  
-#' @param temperatura_f wektor zawierajacy wartosci temperatury
+#' @param temperatura_f wektor zawierający wartości temperatury
 #'  w stopniach Fahrenheita
 #'  
-#' @return wektor numeryczny odpowiadajacy skali Kelvina
+#' @return wektor numeryczny odpowiadający skali Kelvina
 #'
 #' @examples
 #' konwersja_f_k(10)
@@ -51,13 +51,13 @@ konwersja_f_k = function(temperatura_f){
 
 #'Konwersja walut I
 #'
-#' @description Funkcja sluzaca zamianie waluty PLN
-#'  na walute EUR i na odwrot
+#' @description Funkcja służąca zmianie waluty PLN
+#'  na walute EUR i na odwrót
 #' 
-#' @comment Przy zamianie walut nalezy wziac pod uwage kurs,
-#'  ktory z dnia na dzien zmienia swoja wartosc
+#' @comment Przy zamianie walut należy wziąść pod uwagę kurs,
+#'  który z dnia na dzień zmienia swoją wartość
 #'  
-#' @param zl wektor odpowiadajacy wartosci pieniedzy w walucie PLN
+#' @param zl wektor odpowiadający wartości w walucie PLN
 #' 
 #' @return wektor numeryczny
 #' 
@@ -83,8 +83,8 @@ waluta_eur_zl = function(zl){
 
 #' Konwersja walut II
 #' 
-#' @description Funkcja sluzaca zamianie waluty PLN
-#'  na walute USD i na odwrot 
+#' @description Funkcja służąca zmianie waluty PLN
+#'  na walute USD i na odwrót 
 #' 
 #' @comment Dolar amerykanski jest najwazniejsza waluta swiata,
 #'  rozlicza sie w nim wiekszosc panstw swiata
