@@ -233,7 +233,26 @@ zamiana_inm_km = function(km){
 
 
   
+# Konwersja dlugosci
 
+#' @description Funkcja sluzaca do zamiany jednostek
+#'  dlugosci z cali na centrymetry
+#' 
+#' @param cal wektor odpowiadajacy dlugosci w cal
+#'
+#' @return wektor numeryczny w cm
+#'
+#' @warning dlugosci ujemne nie istnieja
+#'
+#' @examples
+#' zamiana_cale_cm(2)
+#' zamiana_cale_cm(0)
+#' zamiana_cale_cm(c(10,20,30))
+
+
+zamiana_cale_cm = function(cm){
+  (cal = 2.54*cm)
+}
 
 
 
