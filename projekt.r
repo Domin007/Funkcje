@@ -54,10 +54,10 @@ konwersja_f_k = function(temperatura_f){
 #' @description Funkcja sluzaca zmianie waluty PLN
 #'  na walute EUR i na odwrot
 #' 
-#' @comment Przy zamianie walut należy wziac pod uwage kurs,
-#'  ktory z dnia na dzien zmienia swoją wartosc
+#' @comment Przy zamianie walut nalezy wziasc pod uwage kurs,
+#'  ktory z dnia na dzien zmienia swoja wartosc
 #'  
-#' @param zl wektor odpowiadający wartosci w walucie PLN
+#' @param zl wektor odpowiadajacy wartosci w walucie PLN
 #' 
 #' @return wektor numeryczny
 #' 
@@ -83,8 +83,8 @@ waluta_eur_zl = function(zl){
 
 #' Konwersja walut II
 #' 
-#' @description Funkcja sluzaca zmianie waluty PLN
-#'  na walute USD i na odwrot 
+#' @description Funkcja służąca zmianie waluty PLN
+#'  na walute USD i na odwrót 
 #' 
 #' @comment Dolar amerykanski jest najwazniejsza waluta swiata,
 #'  rozlicza sie w nim wiekszosc panstw swiata
@@ -122,7 +122,7 @@ waluta_usd_zl(20)
 #' @description Funkcja sluzaca zamianie km/h na mph i na odwrot
 #' 
 #' @comment Umiejetnosc przeliczania mph na km/h przydatna jest, gdy uzywamy aut
-#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajow,
+#'  pochodzacych z USA czy Wielkiej Brytanii, lub gdy wybieramy się do tych krajów,
 #'  aby wiedziec z jaka predkoscia sie poruszamy
 #'  
 #' @param km wektor odpowiadajacy predkosci poruszania sie w km/h
@@ -192,52 +192,48 @@ zamiana_ms_kmh = function(km){
 }
 
 
-# Konwersja odleglosci I
+-----------------------------------------------------------------------------------
 
-konwersja_Mile_KM = function(mile) { 
- wynik = mile * 1.61
- wynik
-} 
-
-formals(konwersja_Mile_KM) 
-body(konwersja_Mile_KM) 
-environment(konwersja_Mile_KM) 
-konwersja_Mile_KM(10)
 
 # Konwersja odleglosci morskich I
 
-konwersja_Nautical_mile_KM = function(mile) { 
-  wynik = mile * 1.85
-  wynik
+#' @description Funkcja sluzaca do konwersji odleglosci z km na miedzynarodowe mile morskie(inm) i na odwrot  
+#' 
+#' @comment Umiejetnosc przeliczania tych jednostek wykorzystywana jest w nawigacji morskiej oraz w lotnictwie,
+#' dotyczy dlugosci, głebokosci, predkosci i kierunku
+#'
+#' 
+#' @param km wektor zawierajacy wartosci odleglosci w kilometrach
+#' 
+#' @return wektor numeryczny
+#' 
+#' @warning 
+odleglosc = -2 
+if(odleglosc < -2){
+  cat("odleglosc nie moze byc ujemna")
+}
+
+#' @examples
+#' zamiana_km_inm(20)
+#' zamiana_km_inm(100)
+#' zamiana_km_inm(c(200,500,1000))
+#' 
+#' zamiana_inm_km(20)
+#' zamiana_inm_km(100)
+#' zamiana_inm_km(c(200,350,999))
+ 
+   
+zamiana_km_inm = function(km){ 
+ (odleglosc = km / 1.852)
 } 
 
-formals(konwersja_Nautical_mile_KM) 
-body(konwersja_Nautical_mile_KM) 
-environment(konwersja_Nautical_mile_KM) 
-konwersja_Nautical_mile_KM(10)
+zamiana_inm_km = function(km){
+  (odleglosc = km * 1.852)
+}
+
 
   
 
-# Konwersja dlugosci
-
-#' @description Funkcja sluzaca do zamiany jednostek
-#'  dlugosci z cali na centrymetry
-#' 
-#' @param cal wektor odpowiadajacy dlugosci w cal
-#'
-#' @return wektor numeryczny w cm
-#'
-#' @warning dlugosci ujemne nie istnieja
-#'
-#' @examples
-#' zamiana_cale_cm(2)
-#' zamiana_cale_cm(0)
-#' zamiana_cale_cm(c(10,20,30))
-
-
-zamiana_cale_cm = function(cm){
-  (cal = 2.54*cm)
-}
 
 
 
