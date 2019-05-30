@@ -1,5 +1,6 @@
 #' Konwersja temperatur I --------------------------------------------------
 #'  
+#'  
 #' @description Funkcja sluzaca do konwersji temperatury ze
 #'  stopni Celsjusza do stopni Fahrenheita i na odwrot
 #' 
@@ -109,8 +110,7 @@ waluta_eur_zl = function(zl){
 #' Konwersja walut II ------------------------------------------------------
 #' 
 #' 
-#' @description Funkcja sluzaca zmianie waluty PLN
-#'  na walute USD i na odwrot 
+#' @description Funkcja sluzaca zmianie waluty PLN na walute USD i na odwrot
 #'  kurs z dnia: 22-05-2019
 #' 
 #' @comment Dolar amerykanski jest najwazniejsza waluta swiata,
@@ -134,13 +134,44 @@ waluta_eur_zl = function(zl){
 waluta_zl_usd = function(zl){
   (kurs=zl/3.854)
 }
-waluta_zl_usd(20)
-
 
 waluta_usd_zl = function(zl){
   (kurs=zl*3.854)
 }
-waluta_usd_zl(20)
+
+
+
+#'Konwersja walut III-------------------------------------------------------
+#'
+#'
+#'@description Funkcja sluzaca zamianie waluty USD na EUR i na odwrot
+#'
+#'@comment kurs z dnia 30-05-2019
+#'
+#'@param EUR - wektor odpowiadajacy wartosci pieniedzy w euro
+#'@param USD - wektor odpowiadajcy wartosci pieniedzy w dolarach amerykanskich
+#'
+#'@return wektor numeryczny odpowiadajacy danej walucie
+#'
+#'@examples
+#'
+#'waluta_eur_usd(20)
+#'waluta_eur_usd(100)
+#'waluta_eur_usd(c(500,1000,5000))
+#'
+#'waluta_usd_eur(100)
+#'waluta_usd_eur(1234)
+#'waluta_usd_eur(c(500,1000,5000))
+
+
+waluta_eur_usd = function(eur){
+  (kurs=eur*1.1134)
+}
+
+waluta_usd_eur = function(usd){
+  (kurs=usd*0.8982)
+}
+
 
 
 #' Konwersja predkosci I ---------------------------------------------------
