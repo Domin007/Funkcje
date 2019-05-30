@@ -47,7 +47,7 @@ konwersja_f_c = function(temperatura_f){
 #' @param temperatura_f wektor zawierajacy wartosci temperatury
 #'  w stopniach Fahrenheita
 #' @param temperatura k wektor zawierajacy wartosci temperatury
-#'  w stopnaich Kelvina
+#'  w stopiachch Kelvina
 #'  
 #' @return wektor numeryczny odpowiadajacy skali Kelvina
 #'
