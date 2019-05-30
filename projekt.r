@@ -1,5 +1,4 @@
-#' Konwersja temperatur I --------------------------------------------------
-#'  
+# Konwersja temperatur I --------------------------------------------------  
 #'  
 #' @description Funkcja sluzaca do konwersji temperatury ze
 #'  stopni Celsjusza do stopni Fahrenheita i na odwrot
@@ -35,7 +34,7 @@ konwersja_f_c = function(temperatura_f){
 
 
 
-#' Konwersja temperatur II -------------------------------------------------
+# Konwersja temperatur II -------------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca do konwersji temperatury 
@@ -141,8 +140,7 @@ waluta_eur_zl = function(zl){
 }
 
 
-#' Konwersja walut II ------------------------------------------------------
-#' 
+# Konwersja walut II ------------------------------------------------------
 #' 
 #' @description Funkcja sluzaca zmianie waluty PLN na walute USD i na odwrot
 #'  kurs z dnia: 22-05-2019
@@ -175,8 +173,7 @@ waluta_usd_zl = function(zl){
 
 
 
-#'Konwersja walut III-------------------------------------------------------
-#'
+# Konwersja walut III -----------------------------------------------------
 #'
 #'@description Funkcja sluzaca zamianie waluty USD na EUR i na odwrot
 #'
@@ -208,7 +205,7 @@ waluta_usd_eur = function(usd){
 
 
 
-#' Konwersja predkosci I ---------------------------------------------------
+# Konwersja predkosci I  --------------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca zamianie km/h na mph i na odwrot
@@ -243,7 +240,7 @@ zamiana_mph_kmh = function(km){
 
 
 
-#' Konwersja predkosci II --------------------------------------------------
+# Konwersja predkosci II --------------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca zamianie km/h na m/s i na odwrot
@@ -279,7 +276,7 @@ zamiana_ms_kmh = function(km){
 
 
 
-#' Konwersja odleglosci morskich -------------------------------------------
+# Konwersja odleglosci morskich -------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca do konwersji odleglosci z km na miedzynarodowe mile morskie(inm) i na odwrot  
@@ -313,7 +310,7 @@ zamiana_inm_km = function(km){
 
 
 
-#' Konwersja dlugosci ------------------------------------------------------
+# Konwersja dlugosci ------------------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca do zamiany jednostek
