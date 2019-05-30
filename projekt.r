@@ -46,7 +46,7 @@ konwersja_f_c = function(temperatura_f){
 #'  
 #' @param temperatura_f wektor zawierajacy wartosci temperatury
 #'  w stopniach Fahrenheita
-#' @param temperatura k wektor zawierajacy wartosci temperatury
+#' @param temperatura_k wektor zawierajacy wartosci temperatury
 #'  w stopiachch Kelvina
 #'  
 #' @return wektor numeryczny odpowiadajacy skali Kelvina
@@ -71,9 +71,43 @@ konwersja_k_f = function(temperatura_k){
   stop("temperatura w stopniach Kelvina nie moze byc ujemna")
 }
 
+# Konwersja temperatur III ------------------------------------------------
+#' 
+#' @description Funkcja sluzaca do konwersji temperatury 
+#'  ze stopni Celsjusza do stopni Kelvina i na odwrot
+#' 
+#' @comment Skala Celsjusza jest miedzynarodowa skala, ktora przyjmuje wartosci dodatnie oraz ujemne,
+#'  bardzo czesto spotykana w zyciu codziennym
+#'  
+#'  
+#' @param temperatura_k wektor zawierajacy wartosci temperatury
+#'  w stopniach Kelvina
+#' @param temperatura_c wektor zawierajacy wartosci temperatury
+#'  w stopiachch celsjusza
+#'  
+#' @return wektor numeryczny odpowiadajacy skali Kelvina
+#' 
+#' examples
+#' konwersja_c_k(1)
+#' konwersja_c_k(20)
+#' konwersja_c_k(-200)
+#'
+#' konwersja_k_c(1)
+#' konwersja_k_c(50)
+#' konwersja_k_c(200)
+#'
+konwersja_c_k = function(temperatura_c){
+  (temperatura_c + 273.15)
+}
+
+konwersja_k_c = function(temperatura_k){
+  (temperatura_k - 273.15) || print(temperatura_k < 0)
+stop("temperatura w stopniach Kelvina nie moze byc ujemna")
+}
 
 
-#' Konwersja walut I -------------------------------------------------------
+
+# Konwersja walut I -------------------------------------------------------
 #' 
 #' 
 #' @description Funkcja sluzaca zmianie waluty PLN
