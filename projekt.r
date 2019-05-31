@@ -1,5 +1,6 @@
 # Konwersja temperatur I --------------------------------------------------  
 #'  
+#'  
 #' @description Funkcja sluzaca do konwersji temperatury ze
 #'  stopni Celsjusza do stopni Fahrenheita i na odwrot
 #' 
@@ -50,27 +51,29 @@ konwersja_f_c = function(temperatura_f){
 #'  
 #' @return wektor numeryczny odpowiadajacy skali Kelvina
 #'
+#' @warning stopnie Kelvina nie moga byc ujemne
+#'
 #' @examples
 #' konwersja_f_k(10)
 #' konwersja_f_k(0)
-#' konwersja_f_k(-500)
+#' konwersja_f_k(200)
 #' 
+#' konwersja_k_f(10)
 #' konwersja_k_f(50)
-#' konwersja_k_f(-1)
-#' konwersja_k_f(25)
+#' konwersja_k_f(300)
 
 
 konwersja_f_k = function(temperatura_f){
-  (temperatura_f + 459.67) *5/9 || (temperatura_f < -459.67)
-    stop("temperatura w stopniach Kelvina nie moze byc ujemna")
+  (temperatura_f + 459.67) *5/9
 }
 
 konwersja_k_f = function(temperatura_k){
-  (temperatura_k *1.8 - 459.67) || (temperatura_k < 0)
-  stop("temperatura w stopniach Kelvina nie moze byc ujemna")
+  (temperatura_k *1.8 - 459.67)
 }
 
+
 # Konwersja temperatur III ------------------------------------------------
+#' 
 #' 
 #' @description Funkcja sluzaca do konwersji temperatury 
 #'  ze stopni Celsjusza do stopni Kelvina i na odwrot
@@ -86,22 +89,25 @@ konwersja_k_f = function(temperatura_k){
 #'  
 #' @return wektor numeryczny odpowiadajacy skali Kelvina
 #' 
-#' examples
+#' @warning temperatura w stopniach Kelvina nie moze byc ujemna
+#' 
+#' @examples
 #' konwersja_c_k(1)
 #' konwersja_c_k(20)
 #' konwersja_c_k(-200)
 #'
-#' konwersja_k_c(1)
+#' konwersja_k_c(20)
 #' konwersja_k_c(50)
 #' konwersja_k_c(200)
 #'
+
+
 konwersja_c_k = function(temperatura_c){
-  (temperatura_c + 273.15)
+  (temperatura_c +273.15)
 }
 
 konwersja_k_c = function(temperatura_k){
-  (temperatura_k - 273.15) || print(temperatura_k < 0)
-stop("temperatura w stopniach Kelvina nie moze byc ujemna")
+  (temperatura_k - 273.15)
 }
 
 
@@ -142,6 +148,7 @@ waluta_eur_zl = function(zl){
 
 # Konwersja walut II ------------------------------------------------------
 #' 
+#' 
 #' @description Funkcja sluzaca zmianie waluty PLN na walute USD i na odwrot
 #'  kurs z dnia: 22-05-2019
 #' 
@@ -174,6 +181,7 @@ waluta_usd_zl = function(zl){
 
 
 # Konwersja walut III -----------------------------------------------------
+#'
 #'
 #'@description Funkcja sluzaca zamianie waluty USD na EUR i na odwrot
 #'
@@ -339,10 +347,5 @@ zamiana_cale_cm = function(cm){
 zamiana_cm_cale = function(cm){
   (cal = 0.39370*cm)
 }
-
-
-
-
-
 
 
