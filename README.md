@@ -1,7 +1,7 @@
+#Zbior funkcji do przeliczania jednostek
+
 **Uczestnicy projektu:** Bartosz Majewski, Dominik Koncewicz
 
-**Zbior funkcji do przeliczania jednostek**
- 
 **I Konwersja temperatur**
  1. Celsjusz <-> Fahrenheit
  2. Fahrenheit <-> Kelvin
