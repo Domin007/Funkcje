@@ -23,7 +23,7 @@
  1. cm <-> cale
 
 
-**Przykladowy wyglad funkcji** 
+# Przykladowy wyglad funkcji
 (konwersja temperatur ze stopni Celsjusza do stopni Fahrenheita)
  
  konwersja_c_f = function(temperatura_c){
