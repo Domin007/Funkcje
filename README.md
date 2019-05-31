@@ -2,7 +2,7 @@
 
 **Uczestnicy projektu:** Bartosz Majewski, Dominik Koncewicz
 
-**I Konwersja temperatur**
+**I. Konwersja temperatur**
  1. Celsjusz <-> Fahrenheit
  2. Fahrenheit <-> Kelvin
  3. Celsjusz <-> Kelvin
