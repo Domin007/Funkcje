@@ -1,6 +1,6 @@
 **Uczestnicy projektu:** Bartosz Majewski, Dominik Koncewicz
 
-opis: Zbior funkcji do przeliczania jednostek
+**Zbior funkcji do przeliczania jednostek**
  
 **I Konwersja temperatur**
  1. Celsjusz <-> Fahrenheit
@@ -12,7 +12,7 @@ opis: Zbior funkcji do przeliczania jednostek
  2. PLN <-> USD
  3. USD <-> EUR
 
-****III. Konwersja predkosci**
+**III. Konwersja predkosci**
  1. km/h <-> mph
  2. km/h <-> m/s
  
@@ -23,7 +23,7 @@ opis: Zbior funkcji do przeliczania jednostek
  1. cm <-> cale
 
 
-# Przykladowy wyglad funkcji 
+**Przykladowy wyglad funkcji** 
 (konwersja temperatur ze stopni Celsjusza do stopni Fahrenheita)
  
  konwersja_c_f = function(temperatura_c){
