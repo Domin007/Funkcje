@@ -1,4 +1,4 @@
-# Zbior funkcji do przeliczanie jednostek
+## Zbior funkcji do przeliczanie jednostek
 
 **Uczestnicy projektu:** Bartosz Majewski, Dominik Koncewicz
 
